@@ -11,14 +11,19 @@
     height: 24rem;
     background-color: #fff;
     border-radius: 50%;
-    padding-top: 1rem;
+    
     text-align: center;
     margin-bottom: 2rem;
 
 }
 
+.container__wether span{
+   font-size: 2rem;
+   font-weight: 300;
+   display: block;
+}
 .container__wether strong{
-   font-size: 10rem;
+   font-size: 8.6rem;
    font-weight: 300;
    display: block;
 }

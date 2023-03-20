@@ -12,48 +12,43 @@
     
 </head>
 <body>
+
     <nav>
-        <form action="">
-            <div class="form__search-box">
-                <input class="form__search-box__input" type="text" placeholder="Buscar Cidade...">
-                <button class="form__search-box__btn" ><span class="material-symbols-outlined">search</span></button>
-            </div>
+        <form id="js-form" class="form__search-box">
+            <input id="input" class="form__search-box__input" type="text" placeholder="Buscar Cidade..." autocomplete="off" autofocus>
+            <button class="form__search-box__btn" ><span class="material-symbols-outlined">search</span></button>
         </form>
     </nav>
 
     <main>
         <section>
-
-            <div class="container">
-                
+            <div class="container"> 
                 <div class="container__wether">
-                    <img src="image 4.png" alt="">
-                    <strong>10 C</strong>
+                    <img id="js-image"src="https://openweathermap.org/img/wn/10d.png" alt="">
+                    <span id="js-weather">chuva</span>
+                    <strong id="js-temp">10°C</strong>
                 </div>
-
                 <div class="container__wether__conditions">
-                
                     <div class="conditions__text">
                         <span>Status do Vento</span>
-                        <span>7 mph</span>
+                        <span>7km/h</span>
                     </div>
                     <div class="conditions__text">
                         <span>Humidade</span>
                         <span>85%</span>
                     </div>
-
                 </div>
             </div>
-
             <div class="city">
                 <span>Hoje, 16, Mar 2023</span>
                 <strong>Barcelona</strong>
                 <span>Spain</span>
             </div>
-
         </section>
-
-
     </main>
+
+    <script src="script/main.js"></script>
+    <script src="script/api.js"></script>
+    <script src="script/dataCity.js"></script>
 </body>
 </html>
