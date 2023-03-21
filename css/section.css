@@ -62,15 +62,15 @@
     
 }
 
-.city span:first-child{
+/* .city span:first-child{
     font-size: 1.4rem;
     font-weight: 400;
-}
+} */
 .city strong{
     font-size: 4rem;
     font-weight: 700;
 }
-.city span:last-child{
+.city span{
     font-size: 2rem;
     font-weight: 400;
 }
