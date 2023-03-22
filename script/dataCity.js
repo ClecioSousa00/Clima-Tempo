@@ -1,20 +1,27 @@
 
-const image = document.querySelector('#js-image')
+const icon = document.querySelector('#js-icon')
 const weather = document.querySelector('#js-weather')
-const temp = document.querySelector('#js-temp')
-const speed = document.querySelector('#js-wind-speed')
-const porcent = document.querySelector('#js-porcent')
-const cityEl = document.querySelector('#js-city')
+const temperature = document.querySelector('#js-temp')
+const speedWind = document.querySelector('#js-wind-speed')
+const percentage = document.querySelector('#js-porcent')
+const cityName = document.querySelector('#js-city')
 const country = document.querySelector('#js-country')
 
-const convertCityToHtml = async inputCity =>{
+const showCityWeather = async inputCity =>{
     const city = await getCityWeather(inputCity)
-    image.setAttribute('src', `https://openweathermap.org/img/wn/${city.weather[0].icon}.png`)
+    icon.setAttribute('src', `https://openweathermap.org/img/wn/${city.weather[0].icon}.png`)
     weather.textContent = `${city.weather[0].description}`
-    temp.textContent = `${parseInt(city.main.temp)}°C`
-    speed.textContent = `${city.wind.speed}km/h`
-    porcent.textContent = `${city.main.humidity}%`
-    cityEl.textContent = `${city.name}`
+    temperature.textContent = `${parseInt(city.main.temp)}°C`
+    speedWind.textContent = `${city.wind.speed}km/h`
+    percentage.textContent = `${city.main.humidity}%`
+    cityName.textContent = `${city.name}`
     country.textContent = `${city.sys.country}`
 }
+const showLocalStorageCity = ()=>{
+    const city = localStorage.getItem('city')
+    if (city) {
+        showCityWeather(city)
+    }
+}
 
+showLocalStorageCity()

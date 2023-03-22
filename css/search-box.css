@@ -1,6 +1,10 @@
+
 nav{
     padding-top: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
 }
+
 .form__search-box{
     background-color: var(--bg-search-box);
     max-width: 30.5rem;
@@ -29,4 +33,11 @@ nav{
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+nav > span{
+    display: inline-block;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }

@@ -9,16 +9,19 @@
 .container__wether{
     width: 24rem;
     height: 24rem;
-    background-color: #fff;
+    background-color: var(--bg-weather);
     border-radius: 50%;
-    
     text-align: center;
     margin-bottom: 2rem;
+}
 
+.container__wether img{
+    width: 5.5rem;
+    
 }
 
 .container__wether span{
-   font-size: 2rem;
+   font-size: 1.8rem;
    font-weight: 300;
    display: block;
 }
@@ -52,13 +55,14 @@
 
 .city{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 6rem 6rem 0 0;
-    height: 22rem;
-    width: 100%;
+    margin: 0 auto;
+    background-color: var(--bg-search-box);
+    border-radius: 6rem;
+    height: 18rem;
+    max-width: 31.5rem;
     
 }
 
@@ -75,25 +79,3 @@
     font-weight: 400;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){
-    .city{
-        width: 65%;
-        margin: 0 auto;
-        border-radius: 6rem;
-    }
-}
-@media screen and (min-width: 993px) and (max-width: 1024px){
-    .city{
-        width: 65%;
-        margin: 0 auto;
-        border-radius: 6rem;
-    }
-}
-@media screen and (min-width: 1025px) {
-    .city{
-        width: 50%;
-        margin: 0 auto;
-        border-radius: 6rem;
-        height: 18rem;
-    }
-}

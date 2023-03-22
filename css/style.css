@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 @import url('search-box.css');
 @import url('section.css');
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@
 
 :root{
     --bg-search-box: #EDEDED;
+    --bg-weather: #d1cece;
 }
 
 html{
@@ -20,27 +22,6 @@ html{
 body{
     height: 100vh;
     background: linear-gradient(180deg, #30A2C5 0%, rgba(255, 255, 255, 0) 100%), #00242F;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 992px){
-    body{
-        gap: 4rem;
-        justify-content: flex-start;
-    }
-}
-@media screen and (min-width: 993px) and (max-width: 1024px){
-    body{
-        gap: 4rem;
-        justify-content: flex-start;
-    }
-}
-@media screen and (min-width: 1025px){
-    body{
-        gap: 4rem;
-        justify-content: flex-start;
-    }
-}

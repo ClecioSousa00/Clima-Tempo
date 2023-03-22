@@ -14,17 +14,18 @@
 <body>
 
     <nav>
-        <form id="js-form" class="form__search-box">
-            <input id="input" class="form__search-box__input" type="text" placeholder="Buscar Cidade..." autocomplete="off" autofocus>
+        <form data-js="search-location" class="form__search-box">
+            <input  class="form__search-box__input" type="text" name="city" placeholder="Buscar Cidade..." autocomplete="off" autofocus>
             <button class="form__search-box__btn" ><span class="material-symbols-outlined">search</span></button>
         </form>
+        <span data-js="error"></span>
     </nav>
 
     <main>
         <section>
             <div class="container"> 
                 <div class="container__wether">
-                    <img id="js-image"src="https://openweathermap.org/img/wn/10d.png" alt="">
+                    <img id="js-icon"src="https://openweathermap.org/img/wn/10d.png" alt="">
                     <span id="js-weather">chuva</span>
                     <strong id="js-temp">10°C</strong>
                 </div>
@@ -42,7 +43,7 @@
             <div class="city">
                 <!-- <span>Hoje, 16, Mar 2023</span> -->
                 <strong id="js-city">Barcelona</strong>
-                <span id="js-country">Spain</span>
+                <span id="js-country">ES</span>
             </div>
         </section>
     </main>
